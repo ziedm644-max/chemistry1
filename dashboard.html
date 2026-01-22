@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة Ziad Mohsen</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* إزالة أي إطار قديم من الصفحة */
+    .page-content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0;       /* إزالة أي padding قديم */
+      background: none; /* إزالة الخلفية القديمة */
+      border-radius: 0; /* إزالة أي زوايا مدورة قديمة */
+      min-height: auto;
+      box-shadow: none; /* إزالة الظل القديم */
+    }
+
+    /* زر WhatsApp أخضر ومتغير عند hover */
+    .whatsapp-btn {
+      padding: 1rem 2rem;
+      background: #25D366;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe57;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,.5);
+    }
+
+    /* الإطار الجديد للملف الشخصي */
+    .profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      background: #2c2c2c;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    }
+
+    .profile-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #6366f1;
+    }
+
+    .profile-info {
+      color: #f5f5f5;
+      font-size: 1.2rem;
+    }
+
+    .profile-info h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+    }
+
+    .profile-info p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header id="welcome-msg"></header>
+
+<nav id="main-nav" class="main-nav"></nav>
+
+<main id="page-content" class="page-content">
+  <div class="profile-container">
+    <img src="ziad.jpg" alt="صورة الأستاذ زياد">
+    <div class="profile-info">
+      <h2>Ziad Mohsen</h2>
+      <p>مدرس كيمياء للثانوية</p>
+      <p>رقمي: 01027793263</p>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+<script>
+window.onload = initDashboard;
+</script>
+
+</body>
+</html>

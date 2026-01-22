@@ -1,0 +1,171 @@
+/* ──────────────────────────────── */
+/* عام - الخط والخلفية */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1f1f1f;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ──────────────────────────────── */
+/* الهيدر */
+header {
+  background: #272727;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,.5);
+}
+
+/* ──────────────────────────────── */
+/* تسجيل الدخول */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.login-box {
+  background: #2c2c2c;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.7);
+  text-align: center;
+}
+.login-box input {
+  width: 80%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #f5f5f5;
+  text-align: center;
+}
+.login-box button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-box button:hover { 
+  transform: scale(1.05); 
+}
+
+/* ──────────────────────────────── */
+/* Nav المربعات الكبيرة */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem 0;
+}
+.main-nav button {
+  width: 180px;
+  height: 120px;
+  border: none;
+  border-radius: 15px;
+  background: #6366f1;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+  transition: all 0.25s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-nav button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,.5);
+}
+
+/* ──────────────────────────────── */
+/* الصفحة الرئيسية والمحتوى */
+.page-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #2c2c2c;
+  border-radius: 20px;
+  min-height: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+/* ──────────────────────────────── */
+/* جدول الدرجات */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  text-align: center;
+}
+th {
+  background: #6366f1;
+  color: white;
+  border-radius: 5px;
+}
+
+/* ──────────────────────────────── */
+/* روابط تحميل PDF */
+a {
+  color: #36cfc9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #73f0e0;
+}
+
+/* ──────────────────────────────── */
+/* textarea للتواصل */
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #f5f5f5;
+  resize: none;
+  font-size: 1rem;
+}
+
+/* زر إرسال الرسالة */
+button.btn {
+  padding: 1rem 2rem;
+  background: #25D366;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,.5);
+}
+
+/* صندوق الرسائل */
+.message-box {
+  background: #2c2c2c;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
